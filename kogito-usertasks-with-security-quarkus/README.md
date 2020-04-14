@@ -13,8 +13,34 @@ This example shows
 * working with user tasks
 * four eye principle with user tasks
 	
-	
 <p align="center"><img width=75% height=50% src="docs/images/process.png"></p>
+
+* Diagram Properties (top)
+<p align="center"><img src="docs/images/diagramProperties.png"></p>
+
+* Diagram Properties (imports)
+<p align="center"><img src="docs/images/diagramProperties2.png"></p>
+
+* Diagram Properties (process variables)
+<p align="center"><img src="docs/images/diagramProperties3.png"></p>
+
+* Diagram Properties (metadata)
+<p align="center"><img src="docs/images/process-metadata.png"></p>
+
+* First Line Approval (top)
+<p align="center"><img src="docs/images/firstLineApprovalUserTask.png"></p>
+
+* First Line Approval (bottom)
+<p align="center"><img src="docs/images/firstLineApprovalUserTask2.png"></p>
+
+* First Line Approval (Assignments)
+<p align="center"><img src="docs/images/firstLineApprovalUserTaskAssignments.png"></p>
+
+* Second Line Approval
+<p align="center"><img src="docs/images/secondLineApprovalUserTask.png"></p>
+
+* Second Line Approval (Assignments)
+<p align="center"><img src="docs/images/secondLineApprovalUserTaskAssignments.png"></p>
 
 
 ## Build and run
@@ -154,4 +180,10 @@ plus the approver who made the first one.
 		"nationality":"American"
 	}
 }
+```
+
+You should see a similar message after performing the second line approval after the curl command
+
+```
+{"id":"f498de73-e02d-4829-905e-2f768479a4f1", "approver":"admin","firstLineApproval:true, "secondLineApproval":true,"traveller":{"firstName":"John","lastName":"Doe","email":"jon.doe@example.com","nationality":"American","address":{"street":"main street","city":"Boston","zipCode":"10005","country":"US"}}}
 ```
